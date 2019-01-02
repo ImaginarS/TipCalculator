@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tip Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ae4-Ba-Ryb">
+                                <rect key="frame" x="104" y="80" width="138" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" ambiguous="YES" text="Bill:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUI-o8-a5E">
+                                <rect key="frame" x="142" y="171" width="36" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="oyi-7P-hsr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L5O-N0-91O">
+                                <rect key="frame" x="225" y="506" width="70" height="32"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="total:" destination="BYZ-38-t0r" eventType="editingChanged" id="OX8-nz-bih"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tip Percentage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sq1-XQ-4gu">
+                                <rect key="frame" x="70" y="268" width="119" height="28.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="grh-3C-8Bd">
+                                <rect key="frame" x="97" y="296.33333333333326" width="182" height="153.66666666666669"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" updatesFrequently="YES"/>
+                                </accessibility>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="tipPercentage:" destination="BYZ-38-t0r" eventType="valueChanged" id="UAT-cQ-G49"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Total Bill:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hqz-DH-0Fa">
+                                <rect key="frame" x="116" y="608" width="113" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tip Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bPn-nn-u89">
+                                <rect key="frame" x="99" y="506" width="121" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="0.00" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTh-D3-cWc">
+                                <rect key="frame" x="186" y="172.66666666666666" width="70" height="32"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="billAmountInput:" destination="BYZ-38-t0r" eventType="editingChanged" id="eYz-RL-oAG"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" ambiguous="YES" text="15 %" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhj-6c-HvN">
+                                <rect key="frame" x="192" y="268.33333333333331" width="48" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.44154012203216553" green="0.90995609760284424" blue="0.43886396288871765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="L5O-N0-91O" secondAttribute="trailing" constant="99" id="0W1-at-krQ"/>
+                            <constraint firstItem="fUI-o8-a5E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="4Qi-0U-0L6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="Ae4-Ba-Ryb" secondAttribute="trailing" constant="138" id="4zY-EZ-DMb"/>
+                            <constraint firstItem="sq1-XQ-4gu" firstAttribute="top" relation="lessThanOrEqual" secondItem="pTh-D3-cWc" secondAttribute="bottom" constant="63.670000000000002" id="6X6-l1-XPm"/>
+                            <constraint firstItem="Ae4-Ba-Ryb" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="6bu-Ed-PLS"/>
+                            <constraint firstItem="grh-3C-8Bd" firstAttribute="leading" secondItem="bPn-nn-u89" secondAttribute="leading" id="9jv-7o-FHj"/>
+                            <constraint firstItem="pTh-D3-cWc" firstAttribute="leading" secondItem="fUI-o8-a5E" secondAttribute="trailing" constant="8" symbolic="YES" id="Gzg-gr-DbC"/>
+                            <constraint firstItem="grh-3C-8Bd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="JhC-BJ-KPT"/>
+                            <constraint firstItem="hqz-DH-0Fa" firstAttribute="top" relation="lessThanOrEqual" secondItem="bPn-nn-u89" secondAttribute="bottom" constant="74" id="LbE-JU-ZGW"/>
+                            <constraint firstItem="grh-3C-8Bd" firstAttribute="top" relation="lessThanOrEqual" secondItem="Bhj-6c-HvN" secondAttribute="bottom" id="OLS-u7-89f"/>
+                            <constraint firstItem="fUI-o8-a5E" firstAttribute="top" relation="lessThanOrEqual" secondItem="Ae4-Ba-Ryb" secondAttribute="bottom" constant="63" id="PHj-GE-EQB"/>
+                            <constraint firstItem="Bhj-6c-HvN" firstAttribute="top" relation="lessThanOrEqual" secondItem="pTh-D3-cWc" secondAttribute="bottom" constant="63.670000000000002" id="QqQ-vW-zcm"/>
+                            <constraint firstItem="sq1-XQ-4gu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="TEt-LI-Kir"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="pTh-D3-cWc" secondAttribute="trailing" constant="154" id="WNh-6S-LBE"/>
+                            <constraint firstItem="hqz-DH-0Fa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="XjL-LN-HDh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Bhj-6c-HvN" secondAttribute="trailing" constant="80" id="aB2-5X-dTG"/>
+                            <constraint firstItem="Bhj-6c-HvN" firstAttribute="leading" secondItem="sq1-XQ-4gu" secondAttribute="trailing" constant="3" id="dck-Pb-ucQ"/>
+                            <constraint firstItem="hqz-DH-0Fa" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="bottom" priority="999" constant="-100" id="di6-3F-Upe"/>
+                            <constraint firstItem="bPn-nn-u89" firstAttribute="bottomMargin" secondItem="L5O-N0-91O" secondAttribute="bottom" constant="-12" id="hi1-uR-Mgx"/>
+                            <constraint firstItem="L5O-N0-91O" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="224.99999999999997" id="nkU-BV-az4"/>
+                            <constraint firstItem="pTh-D3-cWc" firstAttribute="top" relation="lessThanOrEqual" secondItem="Ae4-Ba-Ryb" secondAttribute="bottom" constant="65.329999999999998" id="rGn-XS-w6L"/>
+                            <constraint firstItem="L5O-N0-91O" firstAttribute="top" relation="lessThanOrEqual" secondItem="grh-3C-8Bd" secondAttribute="bottom" constant="57" id="sEr-jY-Uev"/>
+                            <constraint firstItem="bPn-nn-u89" firstAttribute="top" relation="greaterThanOrEqual" secondItem="grh-3C-8Bd" secondAttribute="bottom" id="uYI-t6-5Q5"/>
+                            <constraint firstItem="Ae4-Ba-Ryb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="vH4-pT-c2d"/>
+                            <constraint firstItem="L5O-N0-91O" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bPn-nn-u89" secondAttribute="trailing" constant="1" id="vgT-i7-VkY"/>
+                            <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="hqz-DH-0Fa" secondAttribute="trailing" constant="75" id="wVE-Ty-osb"/>
+                            <constraint firstItem="fUI-o8-a5E" firstAttribute="centerY" secondItem="pTh-D3-cWc" secondAttribute="centerY" id="ybn-ho-ciK"/>
+                            <constraint firstItem="grh-3C-8Bd" firstAttribute="centerX" secondItem="Ae4-Ba-Ryb" secondAttribute="centerX" constant="15" id="yuh-oe-PJf"/>
+                            <constraint firstItem="grh-3C-8Bd" firstAttribute="top" secondItem="sq1-XQ-4gu" secondAttribute="bottom" id="zpq-nz-v6O"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="billAmount" destination="pTh-D3-cWc" id="aAx-td-DLW"/>
+                        <outlet property="percentage" destination="Bhj-6c-HvN" id="Vmb-DT-x4M"/>
+                        <outlet property="slider" destination="grh-3C-8Bd" id="WgN-ac-18w"/>
+                        <outlet property="totalBill" destination="hqz-DH-0Fa" id="G7Y-15-1FD"/>
+                        <outlet property="totalTip" destination="L5O-N0-91O" id="tyG-cV-zHo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.19999999999999" y="131.52709359605913"/>
+        </scene>
+    </scenes>
+</document>
