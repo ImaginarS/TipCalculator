@@ -10,13 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //NumberFormatter    
+    //NumberFormatter
     @IBOutlet weak var totalTip: UITextField!
     @IBOutlet weak var percentage: UILabel!
     @IBOutlet weak var billAmount: UITextField!
     @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var totalBill: UILabel!
-
+    
     
     @IBAction func billAmountInput(_ sender: Any) {
         determineTipPercentage()
@@ -27,17 +27,17 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var amountInserted: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     func determineTipPercentage() {
         guard let bill = billAmount.text else { return }
         guard let convertBillTotalToDouble = Double(bill)?.rounded() else { return }
@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         totalTip.text = String(format:"$%.02f",percentageCalculated)
         let totalBillAmount = convertBillTotalToDouble + percentageCalculated
         totalBill.text =  "Total Bill: " + String(format:"$%.02f",totalBillAmount)
-            }
+    }
     
     func determineBillFromTipPercentage() {
         return
