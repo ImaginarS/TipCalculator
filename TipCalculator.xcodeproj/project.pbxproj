@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CD7D058620D04CC2007F7E04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D058520D04CC2007F7E04 /* AppDelegate.swift */; };
-		CD7D058820D04CC2007F7E04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7D058720D04CC2007F7E04 /* ViewController.swift */; };
-		CD7D058B20D04CC2007F7E04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7D058920D04CC2007F7E04 /* Main.storyboard */; };
-		CD7D058D20D04CC4007F7E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD7D058C20D04CC4007F7E04 /* Assets.xcassets */; };
-		CD7D059020D04CC4007F7E04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD7D058E20D04CC4007F7E04 /* LaunchScreen.storyboard */; };
+		CD38664B21DE69EF004461C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38664A21DE69EF004461C4 /* AppDelegate.swift */; };
+		CD38664D21DE6A6D004461C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD38664C21DE6A6D004461C4 /* ViewController.swift */; };
+		CD8A489921DE9DAC002E4754 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = CD7D058920D04CC2007F7E04 /* Main.storyboard */; };
+		CD8A489A21DE9DAC002E4754 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = CD7D058C20D04CC4007F7E04 /* Assets.xcassets */; };
+		CD8A489B21DE9DAC002E4754 /* LaunchScreen.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = CD7D058E20D04CC4007F7E04 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD38664A21DE69EF004461C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		CD38664C21DE6A6D004461C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = SOURCE_ROOT; };
 		CD7D058220D04CC2007F7E04 /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD7D058520D04CC2007F7E04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD7D058720D04CC2007F7E04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD7D058A20D04CC2007F7E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CD7D058C20D04CC4007F7E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD7D058C20D04CC4007F7E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		CD7D058F20D04CC4007F7E04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		CD7D059120D04CC4007F7E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD7D059120D04CC4007F7E04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,15 +54,15 @@
 		CD7D058420D04CC2007F7E04 /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				CD7D058520D04CC2007F7E04 /* AppDelegate.swift */,
-				CD7D058720D04CC2007F7E04 /* ViewController.swift */,
+				CD38664A21DE69EF004461C4 /* AppDelegate.swift */,
+				CD38664C21DE6A6D004461C4 /* ViewController.swift */,
 				CD7D058920D04CC2007F7E04 /* Main.storyboard */,
 				CD7D058C20D04CC4007F7E04 /* Assets.xcassets */,
 				CD7D058E20D04CC4007F7E04 /* LaunchScreen.storyboard */,
 				CD7D059120D04CC4007F7E04 /* Info.plist */,
 			);
 			path = TipCalculator;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -73,7 +73,7 @@
 			buildPhases = (
 				CD7D057E20D04CC2007F7E04 /* Sources */,
 				CD7D057F20D04CC2007F7E04 /* Frameworks */,
-				CD7D058020D04CC2007F7E04 /* Resources */,
+				CD8A489221DE9CA7002E4754 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -119,13 +119,10 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CD7D058020D04CC2007F7E04 /* Resources */ = {
+		CD8A489221DE9CA7002E4754 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD7D059020D04CC4007F7E04 /* LaunchScreen.storyboard in Resources */,
-				CD7D058D20D04CC4007F7E04 /* Assets.xcassets in Resources */,
-				CD7D058B20D04CC2007F7E04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +133,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD7D058820D04CC2007F7E04 /* ViewController.swift in Sources */,
-				CD7D058620D04CC2007F7E04 /* AppDelegate.swift in Sources */,
+				CD8A489921DE9DAC002E4754 /* Main.storyboard in Sources */,
+				CD8A489A21DE9DAC002E4754 /* Assets.xcassets in Sources */,
+				CD8A489B21DE9DAC002E4754 /* LaunchScreen.storyboard in Sources */,
+				CD38664B21DE69EF004461C4 /* AppDelegate.swift in Sources */,
+				CD38664D21DE6A6D004461C4 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +150,7 @@
 				CD7D058A20D04CC2007F7E04 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		CD7D058E20D04CC4007F7E04 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -158,7 +158,7 @@
 				CD7D058F20D04CC4007F7E04 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -198,6 +198,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -258,6 +259,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -283,7 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = STUF6F5M42;
-				INFOPLIST_FILE = TipCalculator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,7 +303,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = STUF6F5M42;
-				INFOPLIST_FILE = TipCalculator/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
